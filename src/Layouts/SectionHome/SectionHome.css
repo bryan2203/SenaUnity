@@ -1,0 +1,27 @@
+
+.SectionHome{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    background-color:  #F4FFF2;
+    justify-content: space-around;
+}
+.h1Bienvenidos{
+    font-size: 45px;
+    color: #0B4C28;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+}
+.divimgUsuario{
+    
+}
+
+.buttonIngrsar{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    color: #0B4C28;
+    font-weight: 1000;
+    border: none;
+    background-color:  #F4FFF2;
+}
