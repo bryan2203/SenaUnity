@@ -1,24 +1,20 @@
 import React from 'react'
-import imgUsuario from '../../assets/images/imgUsuario.png'
 import '../SectionHome/SectionHome.css'
 
 export const SectionHome = () => {
   return (
     <div>
         <section className='SectionHome'>
-            <div>
-            <h1 className='h1Bienvenidos'>BIENVENIDOS</h1>
-            </div>
-    {/* ------------------------------------- */}
-            <div className='divimgUsuario'>
-            <button className='buttonIngrsar'>
-            <img src={imgUsuario} alt="" />
-            Ingresar
-            </button>
-           
+            <div className='divh1TextHome'>
+            <h1>
+              No te pierdas los <span className="spanTxt">eventos</span> y
+              novedades de tu <span className="spanTxt">SENA</span> más cercano, Infórmate, participa y aprovecha todas las oportunidades
+            </h1>
             </div>
         </section>
-        
     </div>
   )
 }
+
+// No te pierdas los eventos y novedades de tu SENA más cercano. 
+// Infórmate, participa y aprovecha todas las oportunidades!

@@ -1,11 +1,31 @@
-
 .SectionHome{
     display: flex;
     width: 100%;
     margin-top: 20px;
-    background-color:  #F4FFF2;
     justify-content: space-around;
 }
+
+.divh1TextHome {
+    font-size: 1rem;
+    max-width: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.divh1TextHome h1 {
+    color: #0B4C28;
+    font-weight: bold;
+    font-size: 30%;
+    font-family: 'Times New Roman', serif;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.divh1TextHome h1 span.spanTxt {
+    color: #BFFF71;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 .h1Bienvenidos{
     font-size: 45px;
     color: #0B4C28;
@@ -13,7 +33,6 @@
     font-weight: 1000;
 }
 .divimgUsuario{
-    
 }
 
 .buttonIngrsar{

@@ -7,15 +7,17 @@ export const Header = () => {
   return (
     <div>
         <header className='DivHeader'>
-            
-            <h1>Sena <span>Unity</span></h1>
-            <img className='LogoSena' src={imgLogoSena} alt="LogoSena" />
-            
-           
-
+            <h1 >Sena<span>Unity</span></h1>
+            <div className="logo-container">
+                <img className='LogoSena' src={imgLogoSena} alt="Logo del SENA" />
+                <div className="centro-comercio-text">
+                    Centro de Comercio y Turismo<br />
+                    Regional Quindío
+                </div>
+            </div>
             <nav>
                 <ul>
-                    <li>
+                    <li className='iten'>
                         <a href="">Inicio</a>
                         <a href="">contacto</a>
                         <a href="">Horarios</a>
@@ -24,9 +26,7 @@ export const Header = () => {
                 </ul>
             </nav>
             <img className='imgSenaUnity' src={imgLogo} alt="SenaUnity" />
-           
-            
-
+    
         </header>
     </div>
   )
