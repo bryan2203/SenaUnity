@@ -101,7 +101,7 @@ const ProfileUser = () => {
                     <label>Edad</label>
                     <input type="number" name="edad" value={formData.edad} onChange={handleChange} placeholder="Edad" /> 
 
-                    <button type= "submit"> Guardar</button>  
+                    {/* <button type= "submit"> Guardar</button>   */}
                     
                   </form>
 
