@@ -5,25 +5,31 @@
     justify-content: space-around;
     align-items: center;
     /* background: linear-gradient(135deg, #a6a6a7, #2a5298); */
-    background-color:  #F4FFF2;
+    background-color:  transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
+    width: 100vw;
     height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    z-index: 1000
   }
+  
 
   .LogoSena{
-    height: 35px;
+    height: 55px;
   }
   /*  Título */
   .DivHeader h1 {
-    font-size: 45px;
-    color: #0B4C28;
+    font-size: 200%;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 1000;
   }
   
   .DivHeader h1 span {
-    color: #BFFF71; 
+    color: #25dfc4; 
   }
   
   /*  Estilos del Nav */
@@ -43,11 +49,13 @@
   nav ul li {
     display: flex;
     gap: 25px;
+    font-family: 'Poppins', sans-serif;
+
   }
   
   nav ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     font-weight: bold;
    
@@ -74,7 +82,7 @@
   }
   
   nav ul li a:hover {
-    color: #a8eb12; 
+    color: #25dfc4; 
   }
   
   

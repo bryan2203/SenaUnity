@@ -7,13 +7,15 @@
     justify-content: space-around;
 }
 .h1Bienvenidos{
+    
+    align-items: right ;
     font-size: 45px;
     color: #0B4C28;
     font-family: 'Poppins', sans-serif;
     font-weight: 1000;
 }
 .divimgUsuario{
-    
+    align-items: right;
 }
 
 .buttonIngrsar{
