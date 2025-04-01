@@ -3,6 +3,8 @@ import { Header } from "../../Layouts/Header/Header";
 import { SectionHome } from "../../Layouts/SectionHome/SectionHome";
 import Slider from "../Slider/Slider";
 import Oportunidades from "../../components/Oportunidades/Oportunidades";
+import InstrucFuncionarios from "../../Layouts/InstrucFuncionarios/InstrucFuncionarios";
+import NuestrasSedes from "../../Layouts/NuestrasSedes/NuestrasSedes";
 import imgUsuario from '../../assets/images/imgUsuario.png';
 import "../Home/Home.css";
 
@@ -33,6 +35,8 @@ export const Home = () => {
         <Slider />
       </div>
       <Oportunidades />
+      <InstrucFuncionarios />
+      <NuestrasSedes />
     </div>
   );
 };

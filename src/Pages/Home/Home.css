@@ -8,7 +8,7 @@
     padding: 10px 20px; /* Espaciado interno reducido */
     position: relative; /* Se agregó para manejar "Bienvenidos" y "Ingresar" */
     gap: 5%; /* Espacio controlado entre elementos */
-    padding-left: 55px; /* Aumentado de 50px a 55px (5px más) */
+    padding-left: 10%; /* Aumentado de 50px a 55px (5px más) */
     margin-left: 35px; /* Aumentado de 30px a 35px (5px más) */
     overflow-x: hidden;
   }
@@ -27,31 +27,22 @@
   }
   
   .top-section {
-    width: 100%;
+    width: 93%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    padding: 5px;
-    margin-top: 120px;
-    margin-bottom: -30px; /* Cambiado de 0 a -10px para acercar los elementos */
-    position: relative;
-    z-index: 10;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
+    margin: 120px auto 0;
+    padding: 0 40px; /* Espacio en los laterales */
   }
   
   .h1Bienvenidos {
     font-size: 4rem;
     font-weight: bold;
     color: #0B4C28;
-    margin-left: 150px;
-    margin-right: 5%;
     text-shadow: 1px 1px 2px black;
     -webkit-text-stroke: 1px black;
     font-family: 'Times New Roman', serif;
-    font-weight: 1000;
+    margin: 0; /* Removemos márgenes por defecto */
   }
   
   .divh1TextHome {
@@ -80,10 +71,6 @@
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: 160px;
-    margin-right: 0;
-    margin-top: 4px; /* Añadido margen superior para bajar el botón 2px */
-    font-family: 'Times New Roman', serif;
     padding: 0;
   }
   
@@ -123,14 +110,10 @@
   }
   
   .book-animation {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    margin-left: 12%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 5%;
+    gap: 5px;
   }
   
   .superate-text {
@@ -196,6 +179,18 @@
     100% {
       transform: rotateY(0deg);
     }
+  }
+  
+  /* Aseguramos que los espacios sean iguales */
+  .top-section > * {
+    flex: 0 0 auto; /* Evita que los elementos se estiren */
+  }
+  
+  .top-section::before,
+  .top-section::after {
+    content: '';
+    flex: 1;
+    max-width: 40px; /* Ajusta este valor para controlar el tamaño del espacio */
   }
   
   /* Ajustes para pantallas pequeñas */
