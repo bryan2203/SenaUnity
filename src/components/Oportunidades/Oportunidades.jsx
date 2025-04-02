@@ -11,11 +11,7 @@ const Oportunidades = () => {
       <div className="oportunidades-container">
 
         <h2 className="titulo-oportunidades">
-          {titulo.split('').map((letra, index) => (
-            <span key={index} style={{ animationDelay: `${index * 0.1}s` }}>
-              {letra}
-            </span>
-          ))}
+          Un Mundo de{'\n'}Oportunidades{'\n'}te Espera
         </h2>
         <img src="/imagenes/oportunidades.png" alt="Oportunidades" className="oportunidades-img" />
 

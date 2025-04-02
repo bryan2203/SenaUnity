@@ -14,12 +14,6 @@ export const Home = () => {
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;1000&display=swap" rel="stylesheet" />
       <Header />
       <div className="top-section">
-        <div className="book-animation">
-          <div className="book">
-            <div className="book-page"></div>
-          </div>
-          <p className="superate-text">Superate</p>
-        </div>
         <h1 className="h1Bienvenidos">BIENVENIDOS</h1>
         <button className="button-ingresar">
           <div className="ingresar-wrapper">

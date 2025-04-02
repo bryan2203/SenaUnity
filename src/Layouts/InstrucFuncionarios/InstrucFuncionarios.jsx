@@ -139,12 +139,10 @@ const InstrucFuncionarios = () => {
               <h3 className="nombre-instructor">{instructor.nombre}</h3>
             </div>
           ))}
-        </div>
-
-        {/* Tarjeta fija de calificación */}
-        <div className="tarjeta tarjeta-califica">
-          <h3>Califica Tus Instructores</h3>
-          <button className="ver-mas">Ver mas</button>
+          <div className="tarjeta tarjeta-califica">
+            <h3>Califica Tus Instructores</h3>
+            <button className="ver-mas">Ver mas</button>
+          </div>
         </div>
       </div>
     </section>

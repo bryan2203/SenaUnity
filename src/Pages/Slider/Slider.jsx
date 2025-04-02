@@ -66,7 +66,6 @@ const Slider = () => {
 
   return (
     <div className="slider-container">
-      <div className="slider-background"></div>
       <div className="slider">
         {imagesLoaded ? (
           <div className="image-container">

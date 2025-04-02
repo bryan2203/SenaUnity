@@ -8,47 +8,13 @@ const NuestrasSedes = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 700,
-      once: false,
+      duration: 1000,
+      once: true,
       mirror: false,
       offset: 100,
-      startEvent: 'DOMContentLoaded'
+      startEvent: 'DOMContentLoaded',
+      anchorPlacement: 'top-left'
     });
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const element = entry.target;
-          if (!entry.isIntersecting) {
-            // Cuando sale del viewport, reseteamos las clases
-            element.querySelectorAll('.sede-card').forEach(card => {
-              card.classList.remove('aos-animate');
-            });
-          } else {
-            // Cuando entra en el viewport, activamos la animación
-            element.querySelectorAll('.sede-card').forEach(card => {
-              card.classList.add('aos-init');
-              setTimeout(() => {
-                card.classList.add('aos-animate');
-              }, 50);
-            });
-          }
-        });
-      },
-      { 
-        threshold: 0.1 // Ajusta este valor según necesites
-      }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
   }, []);
 
   return (

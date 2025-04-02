@@ -8,34 +8,15 @@
   margin-bottom: 50px;
 }
 
-/* Línea divisoria */
-.divider {
-  width: 93%;
-  height: 3px;
-  background-color: #0B4C28;
-  margin: 40px auto;
-  border: none;
-}
-
 /* Título principal */
 .titulo-sedes {
   position: absolute;
   top: 10%;
   right: 5%;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 2.5rem;
-  font-weight: bold;
-  text-transform: lowercase;
   z-index: 2;
-}
-
-.titulo-sedes::before {
-  content: '';
-  width: 50px;
-  height: 2px;
-  background-color: white;
-  margin-right: 10px;
-  display: inline-block;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Contenedor principal de las sedes */
@@ -68,28 +49,24 @@
 .sede-card {
   position: absolute;
   z-index: 2;
-  background: rgba(149, 149, 149, 0.9);
+  background: rgba(137, 137, 137, 0.9);
   padding: 15px 25px;
   border-radius: 35px;
   width: 45%;
-  backdrop-filter: blur(5px);
-  height: 150px;
-  visibility: visible !important;
-  overflow: hidden;
-  transform: translateX(-300%);
-  opacity: 0;
-  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  height: auto;
+  min-height: 150px;
+  transform: translateX(-200%); /* Posición inicial más alejada */
 }
 
+/* Cuando se active la animación */
 .sede-card.aos-animate {
   transform: translateX(0);
-  opacity: 1;
+  transition: transform 0.7s ease-out;
 }
 
-/* Aseguramos que vuelvan a su posición inicial cuando no están visibles */
+/* Posición inicial cuando no está animado */
 .sede-card:not(.aos-animate) {
-  transform: translateX(-300%) !important;
-  opacity: 0 !important;
+  transform: translateX(-500%) !important; /* Mucho más a la izquierda */
 }
 
 .sede-galan {
@@ -110,25 +87,24 @@
 /* Estilos del título de la sede */
 .sede-titulo {
   color: #BFFF71;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
 }
 
-/* Estilos de la dirección */
-.sede-direccion {
-  color: #333;
-  margin: 8px 0;
-  font-size: 0.9rem;
-}
-
-/* Estilos del teléfono */
+/* Estilos de la dirección y teléfono */
+.sede-direccion,
 .sede-telefono {
   color: #333;
-  margin: 8px 0;
-  font-size: 0.9rem;
-  font-weight: bold;
+  margin: 6px 0;
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.3;
+}
+
+.sede-telefono {
+  font-weight: normal;
 }
 
 /* Responsive */
@@ -148,13 +124,5 @@
     width: 100%;
     max-width: 300px;
     margin: 20px auto;
-  }
-
-  .sede-card:nth-child(1),
-  .sede-card:nth-child(2) {
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
   }
 }

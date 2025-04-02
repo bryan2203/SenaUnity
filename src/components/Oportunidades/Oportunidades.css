@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #0B4C28;
     padding: 40px 20px;
     border-radius: 20px;
     color: white;
@@ -33,7 +32,7 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size: 50px;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-align: center;
     padding: 10px 20px;
@@ -111,7 +110,7 @@
   .divider {
     width: 93%;
     height: 3px;
-    background-color: #0B4C28;
+    background-color: #ffffff;
     margin: 15px auto;
     border: none;
     transform: none;
