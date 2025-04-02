@@ -15,10 +15,16 @@ function App() {
   }, []);
 
   return (
-    <>
-     <Home/>
-    </>
-  )
+    <div className='app'>
+      <ProfileUser/>
+      <LoginPage/>
+      
+      
+      
+
+    </div>
+
+  );
 }
 
 export default App
