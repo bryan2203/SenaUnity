@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "../../Layouts/Header/Header";
 import { SectionHome } from "../../Layouts/SectionHome/SectionHome";
 import Slider from "../Slider/Slider";
+import Noticias from "../Slider/Noticias";
 import Oportunidades from "../../components/Oportunidades/Oportunidades";
 import InstrucFuncionarios from "../../Layouts/InstrucFuncionarios/InstrucFuncionarios";
 import NuestrasSedes from "../../Layouts/NuestrasSedes/NuestrasSedes";
@@ -26,7 +27,10 @@ export const Home = () => {
         <div className="text-container">
           <SectionHome />
         </div>
-        <Slider />
+        <div className="right-container">
+          <Slider />
+          <Noticias />
+        </div>
       </div>
       <Oportunidades />
       <InstrucFuncionarios />

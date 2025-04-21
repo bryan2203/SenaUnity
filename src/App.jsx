@@ -3,6 +3,8 @@ import './App.css'
 import { Home } from './Pages/Home/Home'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import LoginPage from './Pages/LoginPage/LoginPage';
+import ProfileUser from './Pages/CrearPerfil/ProfileUser';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,14 +18,10 @@ function App() {
 
   return (
     <div className='app'>
-      <ProfileUser/>
-      <LoginPage/>
-      
-      
-      
-
+      <Home />
+      {/* <ProfileUser/> */}
+      {/* <LoginPage/> */}
     </div>
-
   );
 }
 

@@ -8,9 +8,7 @@
   height: 100px;
   padding: 0 38px;
   box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
-  position: fixed; /* Hace que el header se mantenga fijo */
-  top: 0; /* Lo fija en la parte superior */
-  left: 0; /* Lo fija al borde izquierdo */
+  position: relative; /* Cambiado de fixed a relative para que se mueva con el scroll */
   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
 }
   .LogoSena{
@@ -136,8 +134,5 @@
     transform: scale(1.1);
   }
   
-  /* Añadir un padding-top al contenido principal para compensar el header fijo */
-  main {
-    padding-top: 100px; /* Igual a la altura del header */
-  }
+  /* Eliminado el padding-top ya que el header ya no es fijo */
 

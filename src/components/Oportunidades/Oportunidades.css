@@ -116,19 +116,6 @@
     transform: none;
   }
   
-  .chatbot {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-
-  }
-  
-  .chatbot img {
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-  }
-
   .oportunidades-section {
     width: 100%;
     padding: 20px 0;

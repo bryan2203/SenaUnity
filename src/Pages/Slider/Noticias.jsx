@@ -1,36 +1,36 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-import "./Slider.css";
-import slider1 from "../../assets/images/slider1.jpg";
-import slider2 from "../../assets/images/slider2.jpg";
-import slider3 from "../../assets/images/slider3.jpg";
+import "./Noticias.css"; // Cambiado para usar su propio archivo CSS
+import noticia1 from "../../assets/images/slider1.jpg"; // Temporalmente usamos las mismas imágenes
+import noticia2 from "../../assets/images/slider2.jpg"; // Puedes cambiarlas por imágenes específicas de noticias
+import noticia3 from "../../assets/images/slider3.jpg";
 
 const cards = [
   {
     id: 1,
-    image: slider1,
-    badge: "Marketer",
-    title: "Lorem ipsum dolor sit explicabo adipisicing elit",
+    image: noticia1,
+    badge: "Noticias",
+    title: "Nuevos cursos disponibles en el área de tecnología",
     description: ""
   },
   {
     id: 2,
-    image: slider2,
-    badge: "Gamer",
-    title: "Lorem ipsum dolor sit explicabo adipisicing elit",
+    image: noticia2,
+    badge: "Eventos",
+    title: "Próxima jornada de inscripciones para programas técnicos",
     description: ""
   },
   {
     id: 3,
-    image: slider3,
-    badge: "Editor",
-    title: "Lorem ipsum dolor sit explicabo adipisicing elit",
+    image: noticia3,
+    badge: "Informativo",
+    title: "Convenios con empresas para prácticas profesionales",
     description: ""
   }
 ];
 
-const Slider = () => {
+const Noticias = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   // Precargar todas las imágenes antes de mostrarlas
@@ -60,7 +60,7 @@ const Slider = () => {
 
   return (
     <div className="slider-container">
-      <h2 className="section-title">Eventos</h2>
+      <h2 className="section-title">Últimas Noticias</h2>
       {imagesLoaded ? (
         <div className="cards-container">
           {cards.map((card) => (
@@ -90,10 +90,10 @@ const Slider = () => {
           ))}
         </div>
       ) : (
-        <div className="slider-loading">Cargando contenido...</div>
+        <div className="slider-loading">Cargando noticias...</div>
       )}
     </div>
   );
 };
 
-export default Slider;
+export default Noticias;

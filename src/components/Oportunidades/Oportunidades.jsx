@@ -1,6 +1,6 @@
 import React from "react";
 import "./Oportunidades.css";
-
+import imgOportunidades from "../../assets/images/oportunidades.jpg";
 
 const Oportunidades = () => {
   const titulo = "Un mundo de oportunidades te espera";
@@ -17,7 +17,7 @@ const Oportunidades = () => {
             </span>
           ))}
         </h2>
-        <img src="/imagenes/oportunidades.png" alt="Oportunidades" className="oportunidades-img" />
+        <img src={imgOportunidades} alt="Oportunidades" className="oportunidades-img" />
 
         <div className="opciones-container">
           <div className="opcion">
@@ -34,9 +34,6 @@ const Oportunidades = () => {
           </div>
         </div>
 
-        <div className="chatbot">
-          <img src="/imagenes/imgUsuario.png" alt="Chatbot" />
-        </div>
       </div>
       <hr className="divider bottom-divider" />
     </section>

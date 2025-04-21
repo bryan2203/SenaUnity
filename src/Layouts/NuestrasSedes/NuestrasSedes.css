@@ -60,7 +60,7 @@
 
 /* Cuando se active la animación */
 .sede-card.aos-animate {
-  transform: translateX(0);
+  transform: translateX(-30%);
   transition: transform 0.7s ease-out;
 }
 
@@ -71,17 +71,17 @@
 
 .sede-galan {
   top: 5%;
-  left: -15%;
+  left: -25%;
 }
 
 .sede-comercio {
   bottom: 5%;
-  left: -15%;
+  left: -25%;
 }
 
 .sede-agroindustrial {
   top: 35%;
-  left: 30%;
+  left: 20%;
 }
 
 /* Estilos del título de la sede */
