@@ -68,7 +68,7 @@ const ProfileUser = () => {
 
 
        <div className="divPrincipal">
-                  <Header/>
+                 
 
 
                   {/* partecita para la imagen */}

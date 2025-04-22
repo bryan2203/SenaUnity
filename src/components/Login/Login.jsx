@@ -25,12 +25,14 @@ const Login = () => {
 
         
 
-        
+        <>
+        <Header/>
         <div className="divPrincipal">
+           
             {/* Sección de Bienvenida */}
 
 
-            <Header/>
+            
             
             <div className="bienvenida">
                 <h1 className="txt-Bienvenido">BIENVENIDO</h1>
@@ -87,7 +89,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
-        
+        </>
     );
 };
 

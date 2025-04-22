@@ -13,7 +13,7 @@ export const Header = () => {
             <h1>Sena <span>Unity</span></h1>
             <img className='LogoSena' src={imgLogoSenaGreen} alt="LogoSena" />
             <div className="logo-container">
-                <img className='LogoSena' src={imgLogoSena} alt="Logo del SENA" />
+                
                 <div className="centro-comercio-text">
                     Centro de Comercio y Turismo<br />
                     Regional Quindío
