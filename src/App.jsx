@@ -18,9 +18,13 @@ function App() {
 
   return (
     <div className='app'>
+
       <Home />
       {/* <ProfileUser/> */}
       {/* <LoginPage/> */}
+
+      <LoginPage/>
+
     </div>
   );
 }
