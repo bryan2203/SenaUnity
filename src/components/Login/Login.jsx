@@ -5,6 +5,7 @@ const Login = () => {
     const [formData, setFormData] = useState({
         registrarse: "",
         password: "",
+        rol: "estudiante"
     });
 
     const handleChange = (e) => {
@@ -41,7 +42,7 @@ const Login = () => {
 
             {/* Sección del Formulario */}
             <div className="Registro">
-                <h2 className="txt-registrarse">Registrarse</h2>
+                <h2 className="txt-registrarse">Inicia sesion</h2>
                 <form onSubmit={handleSubmit} className="mi-formulario">
                     <input
                         type="text"
@@ -61,9 +62,23 @@ const Login = () => {
                         required
                         className="input-field"
                     />
+
+                    <select name="rol"
+                    value={formData.rol}
+                    onChange={handleChange}
+                    className="input-field"
+                    required
+                    >
+                        <option value="estudiante"> Estudiante</option>
+                        <option value="Instructor"> Instructor</option>
+                        <option value="Funcionario">funcionario</option>
+                    </select>
                     <button type="submit" className="btn-IniciarSesion">
                         iniciar sesion
                     </button>
+                    <p className="register.text"
+                    > ¿no tienes cuenta ? <a href="/registro"> CrearPerfil</a>
+                    </p>
                 </form>
 
                 {/* Redes Sociales */}

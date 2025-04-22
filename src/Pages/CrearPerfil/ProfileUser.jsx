@@ -39,6 +39,11 @@ const ProfileUser = () => {
 
     const file = e.target.files[0];
     if (file) {
+      if(file.size > 2 * 1024 * 1024) {
+
+        alert( "la imagen es muy pesada. Por favor usa una menor a 2 MB");
+        return;
+      }
       setFormData((prevState) => ({
         ...prevState,
         foto: URL.createObjectURL(file),
@@ -72,7 +77,7 @@ const ProfileUser = () => {
                     <input type="file" accept= "image/*" onChange ={handleImageChange} />
                     <label className="boton-cargarimagen">
                       <input type="file" accept='image/*' onChange={handleImageChange} />
-                      Seleccionar imagn
+                      Seleccionar imagen
 
                     </label>
 
@@ -106,6 +111,8 @@ const ProfileUser = () => {
                   </form>
 
                   {/* cambios */}
+
+                  {/* rama development */}
                   
        
                   
