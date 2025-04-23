@@ -8,6 +8,7 @@ import InstrucFuncionarios from "../../Layouts/InstrucFuncionarios/InstrucFuncio
 import NuestrasSedes from "../../Layouts/NuestrasSedes/NuestrasSedes";
 import imgUsuario from '../../assets/images/imgUsuario.png';
 import "../Home/Home.css";
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
   return (
@@ -16,12 +17,14 @@ export const Home = () => {
       <Header />
       <div className="top-section">
         <h1 className="h1Bienvenidos">BIENVENIDOS</h1>
+        <Link to="/LoginPage">
         <button className="button-ingresar">
           <div className="ingresar-wrapper">
-            <img src={imgUsuario} alt="Usuario" />
+            <img src={imgUsuario} alt="Usuario" style={{cursor:'pointer'}} />
             <span className="ingresar-text">Ingresar</span>
           </div>
         </button>
+        </Link>
       </div>
       <div className="home-container">
         <div className="text-container">

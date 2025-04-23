@@ -1,26 +1,26 @@
 import React, { useState } from "react";
-import "../Login/Login.css";
 import { Header } from '../../Layouts/Header/Header';
-import { Link } from 'react-router-dom';
+import './Register.css';
 
-const Login = () => {
+const Register = () => {
   const [formData, setFormData] = useState({
-    registrarse: "",
+    nombre: "",
+    correo: "",
     password: "",
     rol: "estudiante"
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Datos del formulario: ", formData);
+    console.log("Datos de registro: ", formData);
   };
 
   return (
@@ -39,19 +39,19 @@ const Login = () => {
           <button className="btn-leer">Leer más</button>
         </div>
 
-        {/* Sección del Formulario */}
+        {/* Formulario de Registro */}
         <div className="Registro">
-          <h2 className="txt-registrarse">Inicia sesión</h2>
-
+          <h2 className="txt-registrarse">Crear cuenta</h2>
           <form onSubmit={handleSubmit} className="mi-formulario">
+            
             <input
-              type="text"
-              name="registrarse"
-              placeholder="Usuario"
-              value={formData.registrarse}
+              type="email"
+              name="correo"
+              placeholder="Correo electrónico"
+              value={formData.correo}
               onChange={handleChange}
-              required
               className="input-field"
+              required
             />
             <input
               type="password"
@@ -59,10 +59,9 @@ const Login = () => {
               placeholder="Contraseña"
               value={formData.password}
               onChange={handleChange}
-              required
               className="input-field"
+              required
             />
-
             <select
               name="rol"
               value={formData.rol}
@@ -76,15 +75,8 @@ const Login = () => {
             </select>
 
             <button type="submit" className="btn-IniciarSesion">
-              Iniciar sesión
+              Registrarse
             </button>
-
-            <p className="register-text">
-              ¿No tienes cuenta?{" "}
-              <Link to="/register" style={{ color: "blue" }}>
-                Registrarse
-              </Link>
-            </p>
           </form>
 
           {/* Redes Sociales */}
@@ -97,4 +89,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

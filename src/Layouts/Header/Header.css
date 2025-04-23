@@ -1,8 +1,8 @@
 /* 🌍 Estilos del Header */
+
 .DivHeader {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   box-shadow: none;
   width: 100%;
   height: 100px;
@@ -10,6 +10,7 @@
   box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
   position: relative; /* Cambiado de fixed a relative para que se mueva con el scroll */
   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  margin-bottom: 30px;
 }
   .LogoSena{
     height: 30px;
